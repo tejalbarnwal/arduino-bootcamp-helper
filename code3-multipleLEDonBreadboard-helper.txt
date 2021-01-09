@@ -2,18 +2,15 @@
   We have already assigned the pins, you can definitely change if you want to :)
 */
 
-int led1 = 2;
-int led2 = 3;
-int led3 = 4;
-int led4 = 5;
-int led5 = 6;
-int led6 = 7;
-int led7 = 8;
-int led8 = 9;
-int delayperiod = 0;
-int poten = A0;
-int invalue;
-
+int led1 =  // Which pin do you want to use??
+int led2 =  // Which pin do you want to use??
+int led3 =  // Which pin do you want to use??
+int led4 =  // Which pin do you want to use??
+int led5 =  // Which pin do you want to use??
+int led6 =  // Which pin do you want to use??
+int led7 =  // Which pin do you want to use??
+int led8 =  // Which pin do you want to use??
+int delayperiod = 1000 ;
 
 void setup()
 {
@@ -27,10 +24,6 @@ void setup()
 
 void loop()
 {
-  invalue = analogRead(poten);
-
-  // Map function!!
-  delayperiod = map(invalue,0,1023,0,1000);
     
   digitalWrite(led1, HIGH);
   delay(delayperiod);
